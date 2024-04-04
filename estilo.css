@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-weight: bold;
+  	font-style: normal;
+}
+
+body {
+	background: #f5f5f5;
+	background-image: linear-gradient(to bottom, #f5f5f5, #f4f3f6, #f4f1f7, #f4eff7, #f4edf7);
+	scroll-behavior: smooth;
+}
+
+#inicio {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 50px;
+}
+
+#titulo-contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 450px;
+	justify-content: center;
+	margin: 160px 200px 50px 200px;
+}
+
+#titulo-inputs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+	font-family: "Fjalla One", sans-serif;
+	font-weight: 400;
+	text-shadow: 2px 2px 1px #999;
+}
+
+select {
+	margin-right: 5px;
+	width: 45%;
+	text-align: center;
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #222;
+	box-shadow: 2px 2px 1px #999;
+	background: #f4edf7;
+
+	&:hover{
+		background: #E9DCEE;
+	}
+}
+
+input {
+	margin-left: 5px;
+	width: 45%;
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #222;
+	box-shadow: 2px 2px 1px #999;
+	background: #f5f5f5;
+	outline: none;
+
+	&::placeholder {
+		opacity: .3;
+		font-style: italic;
+	}
+}
+
+
+
+
+#parrafo-contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+	justify-content: center;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 60px;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 8px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	
+	background: transparent;
+
+	&::placeholder {
+		opacity: .2;
+		font-style: italic;
+		text-align: justify;
+	}
+}
+
+#parrafo-inputs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+#instrucciones {
+	box-shadow: 3px -3px 3px rgba(22, 22, 22, 0.7);
+	margin-top: 85px;
+	padding: 15px 100px;
+
+}
+
+h2, a {
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: rgba(22, 22, 22, 0.7);
+	font-family: "Fjalla One", sans-serif;
+	font-weight: 400;
+	text-shadow: 2px 2px 1px #999;
+	margin-bottom: 15px;
+}
+
+i {
+	font-size: 2.2rem;
+}
+
+p {
+	opacity: .7;
+	margin-left: 15px;
+}

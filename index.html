@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/e22f94a194.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<title>CustomizeMe</title>
 </head>
@@ -14,41 +15,39 @@
 <body>
 	<section id="inicio">
 		<div id="titulo-contenedor">
-			<h1>Customize Me</h1>
+			<h1 id="titulo" contentEditable="true">Customize Me</h1>
 			<div id="titulo-inputs">
-				<select>
+				<select id="propiedad-h1">
 					<option value="" disabled="" selected="Elige una propiedad">
 					Elige una propiedad
 					</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
+					<option value="color">Color de letra</option>
+					<option value="background">Color de fondo</option>
+					<option value="fontSize">Tamaño de la letra</option>
+					<option value="textShadow">Sombra</option>
+					<option value="fontStyle">Estilo de letra</option>
 				</select>
-				<input type="text" name="" placeholder="Insterta el valor">
+				<input type="text" id="valor-h1" placeholder="Insterta el valor">
+				<button onclick="aplicarEstiloTitulo()">Aplicar Estilo</button>
 			</div>
 		</div>
 
 		<div id="parrafo-contenedor">
-			<textarea placeholder="inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta"></textarea>
+			<textarea id="parrafo" placeholder="inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta texto inserta"></textarea>
 
 			<div id="parrafo-inputs">
-			<select>
+			<select id="propiedad-parrafo">
 					<option value="" disabled="" selected="Elige una propiedad">
 					Elige una propiedad
 					</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
-					<option>Opcion 1</option>
+					<option value="color">Color de letra</option>
+					<option value="background">Color de fondo</option>
+					<option value="fontSize">Tamaño de la letra</option>
+					<option value="textShadow">Sombra</option>
+					<option value="fontStyle">Estilo de letra</option>
 			</select>
-			<input type="text" name="" placeholder="Insterta el valor">
+			<input type="text" id="valor-parrafo" placeholder="Insterta el valor">
+			<button onclick="aplicarEstiloParrafo()">Aplicar Estilo</button>
 			</div>
 		</div>
 	</section>

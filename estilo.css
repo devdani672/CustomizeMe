@@ -41,17 +41,19 @@ h1 {
 	font-family: "Fjalla One", sans-serif;
 	font-weight: 400;
 	text-shadow: 2px 2px 1px #999;
+	outline: none;
 }
 
 select {
 	margin-right: 5px;
-	width: 45%;
+	width: auto;
 	text-align: center;
 	padding: 8px;
 	border-radius: 4px;
 	border: 2px solid #222;
 	box-shadow: 2px 2px 1px #999;
 	background: #f4edf7;
+	cursor: pointer;
 
 	&:hover{
 		background: #E9DCEE;
@@ -59,8 +61,9 @@ select {
 }
 
 input {
-	margin-left: 5px;
-	width: 45%;
+	margin: 0 5px;
+	width: 30%;
+	min-width: 30%;
 	padding: 8px;
 	border-radius: 4px;
 	border: 2px solid #222;
@@ -74,6 +77,20 @@ input {
 	}
 }
 
+button {
+	width: 30%;
+	margin-left: 5px;
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #222;
+	box-shadow: 2px 2px 1px #999;
+	background: #f4edf7;
+	cursor: pointer;
+
+	&:hover{
+		background: #E9DCEE;
+	}
+}
 
 
 

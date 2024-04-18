@@ -150,6 +150,22 @@ i {
 }
 
 p {
-	opacity: .7;
-	margin-left: 15px;
+	color: rgba(22, 22, 22, .6);
+
+}
+
+ul {
+	margin-left: 30px;
+}
+
+li {
+	margin: 10px 0;
+}
+
+span {
+	color: rgba(22, 22, 22, .8);
+}
+
+.span2 {
+	color: rgba(22, 22, 22, .4);
 }

@@ -1,4 +1,9 @@
 
+let inputTitulo = document.getElementById("valor-h1")
+
+inputTitulo.addEventListener("keyup", aplicarEstiloTitulo)
+
+
 function aplicarEstiloTitulo() {
 	const titulo = document.getElementById("titulo");
 	const propiedadTitulo  = document.getElementById("propiedad-h1").value;
@@ -27,6 +32,10 @@ function aplicarEstiloTitulo() {
 	}
 }
 
+
+let inputParrafo = document.getElementById("valor-parrafo")
+
+inputParrafo.addEventListener("keyup", aplicarEstiloParrafo)
 
 function aplicarEstiloParrafo() {
 	const parrafo = document.getElementById("parrafo");

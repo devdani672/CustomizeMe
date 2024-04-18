@@ -7,7 +7,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/e22f94a194.js" crossorigin="anonymous"></script>
-	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<title>CustomizeMe</title>
 </head>
@@ -28,7 +27,7 @@
 					<option value="fontStyle">Estilo de letra</option>
 				</select>
 				<input type="text" id="valor-h1" placeholder="Insterta el valor">
-				<button onclick="aplicarEstiloTitulo()">Aplicar Estilo</button>
+				
 			</div>
 		</div>
 
@@ -47,18 +46,25 @@
 					<option value="fontStyle">Estilo de letra</option>
 			</select>
 			<input type="text" id="valor-parrafo" placeholder="Insterta el valor">
-			<button onclick="aplicarEstiloParrafo()">Aplicar Estilo</button>
 			</div>
 		</div>
 	</section>
 	<section id="instrucciones">
 		<h2><a href="#1">Instrucciones  <i class="fa-solid fa-arrows-down-to-line"></i></a></h2>
-		<p id="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<ul id="1">
+			<li><span>Para modificar cualquier propiedad, selecionala primero dale un valor adecuado y pulsa "Aplicar Estilo"</span></li>
+			<li>
+				<p><span>Valores adecuados para color y color de fondo:</span> Colores en inglés y en hexagesimal. <span class="span2">green // #008000</span></p>
+			</li>
+			<li>
+				<p><span>Valores adecuados para sombra:</span> Desplazmiento en el eje x, desplazamiento en el eje y, difuminao, color. <span class="span2">5 5 5 grey</span></p>
+			</li>
+			<li>
+				<p><span>Valores adecuados para estilo de letra:</span> italic, bold y normal</p>
+			</li>
+		</ul>
 	</section>
+
+		<script src="script.js"></script>
 </body>
 </html>

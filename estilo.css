@@ -33,6 +33,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 h1 {
@@ -91,6 +92,32 @@ button {
 		background: #E9DCEE;
 	}
 }
+
+.error {
+	min-width: 70%;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 4px;
+	border: 2px solid #ce5153;
+	outline: 2px solid #ce5153;
+	outline-offset: 2px;
+	background: rgba(225, 143, 144, .3);
+	display: none;
+}
+
+.error-p, .error-a {
+	text-align: center;
+	font-size: .8rem;
+	font-style: italic;
+	color: #ce5153;
+	font-family: sans-serif;
+	font-weight: 700;
+	text-shadow: none;
+}
+
+
+
+
 
 
 

@@ -5,9 +5,12 @@ inputTitulo.addEventListener("keyup", aplicarEstiloTitulo)
 
 
 function aplicarEstiloTitulo() {
+
 	const titulo = document.getElementById("titulo");
 	const propiedadTitulo  = document.getElementById("propiedad-h1").value;
 	const valorTitulo = document.getElementById("valor-h1").value;
+	const mensajeError = document.querySelector('.error');
+
 
 	if(!isNaN(valorTitulo)) {
 
@@ -31,6 +34,28 @@ function aplicarEstiloTitulo() {
 		titulo.style[propiedadTitulo] = valorTitulo;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let inputParrafo = document.getElementById("valor-parrafo")
